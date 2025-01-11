@@ -19,21 +19,28 @@ body {
     color: white;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;    /* Center navbar items horizontally */
+    align-items: center;        /* Center navbar items vertically */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 60px;               /* Set height for navbar */
 }
 
+/* Logo styles */
 .navbar .logo h1 {
     font-size: 1.8em;
+    text-align: center;         /* Ensure text inside the logo is centered */
+    margin: 0;                  /* Remove default margin */
 }
 
+/* Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
+    position: absolute;
+    right: 20px; /* Position nav links to the right */
 }
 
 .nav-links li {

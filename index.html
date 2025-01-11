@@ -28,28 +28,27 @@
 	
 	//date
 	<div id="date-container">
-    <p id="current-date"></p>
-</div>
+        <p id="current-date"></p>
+    </div>
 
-<script>
-    // Function to get and format the current date
-    function showDate() {
-        const today = new Date();
-        const options = { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-        };
-        const formattedDate = today.toLocaleDateString('en-US', options);
+    <script>
+        // Function to get and format the current date
+        function showDate() {
+            const today = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const formattedDate = today.toLocaleDateString('en-US', options);
 
-        // Display the date in the element with id "current-date"
-        document.getElementById('current-date').textContent = formattedDate;
-    }
+            // Display the date in the element with id "current-date"
+            document.getElementById('current-date').textContent = formattedDate;
+        }
 
-    // Call the function to display the date when the page loads
-    showDate();
-</script>
-
+        // Call the function to display the date when the page loads
+        window.onload = showDate;
+    </script>
 
     <!-- Parallax Hero Section -->
     <div id="hero" class="hero">

@@ -13,88 +13,27 @@ body {
     color: #fff;
 }
 
-
-/* Styles for the brightness column */
-.brightness-column {
-    display: flex;
-    flex-direction: column; /* Stack the levels vertically */
-    width: 100px; /* Set the column width */
-    height: 500px; /* Set the column height */
-    margin: 0 auto; /* Center the column */
-}
-
-/* Common styles for each level */
-.level {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%; /* Each level takes up 20% of the column height */
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid #fff; /* Optional: Add border to each level */
-}
-
-/* Individual brightness levels */
-.level-100 {
-    background-color: #1D3557; /* Dark Blue */
-    filter: brightness(100%);
-}
-
-.level-50 {
-    background-color: #1D3557; /* Dark Blue */
-    filter: brightness(50%);
-}
-
-.level-25 {
-    background-color: #1D3557; /* Dark Blue */
-    filter: brightness(25%);
-}
-
-.level-15 {
-    background-color: #1D3557; /* Dark Blue */
-    filter: brightness(15%);
-}
-
-.level-5 {
-    background-color: #1D3557; /* Dark Blue */
-    filter: brightness(5%);
-}
-
-/* Text styling */
-.level span {
-    font-size: 1.2em;
-}
-
-
 /* Navbar styles */
 .navbar {
     background-color: #1D3557; /* Deep Blue */
     color: white;
     padding: 15px;
     display: flex;
-    justify-content: center;    /* Center navbar items horizontally */
-    align-items: center;        /* Center navbar items vertically */
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 60px;               /* Set height for navbar */
 }
 
-/* Logo styles */
 .navbar .logo h1 {
     font-size: 1.8em;
-    text-align: center;         /* Ensure text inside the logo is centered */
-    margin: 0;                  /* Remove default margin */
 }
 
-/* Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
-    position: absolute;
-    right: 20px; /* Position nav links to the right */
 }
 
 .nav-links li {

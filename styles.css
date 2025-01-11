@@ -1,111 +1,50 @@
-/* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Knowledge Base</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Indian Knowledge Base</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-/* Navbar */
-.navbar {
-  background-color: #2c3e50;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Indian Knowledge Base</h1>
+      <p>Explore the wisdom and innovation of India.</p>
+      <a href="#about" class="cta-btn">Learn More</a>
+    </div>
+  </section>
 
-.navbar .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Indian Knowledge Base is a platform that highlights India's vast history, knowledge, and modern innovations. Join us to explore ancient wisdom and contemporary advancements.</p>
+  </section>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or want to know more, feel free to reach out!</p>
+  </section>
 
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Indian Knowledge Base. All Rights Reserved.</p>
+  </footer>
 
-.nav-links li a:hover {
-  color: #3498db;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #3498db;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  background-color: #e74c3c;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #c0392b;
-}
-
-/* About Section */
-.about {
-  background-color: #ecf0f1;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.5em;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.2em;
-  color: #34495e;
-}
-
-/* Contact Section */
-.contact {
-  background-color: #95a5a6;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+  <script src="script.js"></script>
+</body>
+</html>

@@ -24,6 +24,32 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
+	
+	
+	//date
+	<div id="date-container">
+    <p id="current-date"></p>
+</div>
+
+<script>
+    // Function to get and format the current date
+    function showDate() {
+        const today = new Date();
+        const options = { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        };
+        const formattedDate = today.toLocaleDateString('en-US', options);
+
+        // Display the date in the element with id "current-date"
+        document.getElementById('current-date').textContent = formattedDate;
+    }
+
+    // Call the function to display the date when the page loads
+    showDate();
+</script>
+
 
     <!-- Parallax Hero Section -->
     <div id="hero" class="hero">

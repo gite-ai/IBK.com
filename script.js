@@ -1,7 +1,4 @@
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    window.scrollTo({
-        top: section.offsetTop - 50,
-        behavior: 'smooth'
-    });
+function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active');
 }
